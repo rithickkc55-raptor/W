@@ -1,7 +1,20 @@
 const form = document.querySelector("#brief-form");
 const output = document.querySelector("#brief-output");
-const tabButtons = document.querySelectorAll("[data-tab]");
-const tabPanels = document.querySelectorAll("[data-panel]");
+const viewButtons = document.querySelectorAll("[data-view-target]");
+const views = document.querySelectorAll("[data-view]");
+const activeViewTitle = document.querySelector("#active-view-title");
+const activeViewCopy = document.querySelector("#active-view-copy");
+
+const viewContent = {
+  portfolio: {
+    title: "AI Portfolio",
+    copy: "Your personal page for AI projects, writing, experiments, proof of work, and build logs."
+  },
+  company: {
+    title: "Company AI Platform",
+    copy: "A product-style company page for AI websites, assistants, automation, resources, and services."
+  }
+};
 
 const recommendations = {
   "book more calls": [
@@ -15,7 +28,7 @@ const recommendations = {
     "Trigger abandoned-checkout follow-ups with the visitor's goal and selected package."
   ],
   "answer customer questions": [
-    "Create a searchable knowledge layer from your FAQs, policies, and onboarding material.",
+    "Create a searchable knowledge layer from FAQs, policies, and onboarding material.",
     "Let the AI assistant resolve common questions while escalating high-value requests.",
     "Track unanswered questions weekly so the website improves from real visitor friction."
   ],
@@ -28,6 +41,22 @@ const recommendations = {
 
 function sentenceCase(value) {
   return value.charAt(0).toUpperCase() + value.slice(1);
+}
+
+function setView(viewName) {
+  const nextView = viewContent[viewName] ? viewName : "portfolio";
+
+  views.forEach((view) => {
+    view.classList.toggle("is-active", view.dataset.view === nextView);
+  });
+
+  viewButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.viewTarget === nextView);
+  });
+
+  activeViewTitle.textContent = viewContent[nextView].title;
+  activeViewCopy.textContent = viewContent[nextView].copy;
+  window.location.hash = nextView;
 }
 
 function createBrief(event) {
@@ -51,18 +80,17 @@ function createBrief(event) {
   `;
 }
 
-form.addEventListener("submit", createBrief);
-
-tabButtons.forEach((button) => {
+viewButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const activeTab = button.dataset.tab;
-
-    tabButtons.forEach((item) => {
-      item.classList.toggle("is-active", item.dataset.tab === activeTab);
-    });
-
-    tabPanels.forEach((panel) => {
-      panel.classList.toggle("is-active", panel.dataset.panel === activeTab);
-    });
+    setView(button.dataset.viewTarget);
+    document.querySelector(".view-shell").scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+form.addEventListener("submit", createBrief);
+
+if (window.location.hash === "#company") {
+  setView("company");
+} else {
+  setView("portfolio");
+}

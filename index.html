@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rithickkrex | Portfolio + AI Company</title>
+    <title>Rithickkrex AI | Portfolio + Company Platform</title>
     <meta
       name="description"
-      content="The personal portfolio, blog, and AI company website for Rithickkrex."
+      content="Rithickkrex AI is a responsive two-sided website for an AI portfolio and AI company platform."
     />
     <link rel="preload" href="assets/hero-ai-studio.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Rithickkrex home">
+      <a class="brand" href="#top" aria-label="Rithickkrex AI home">
         <span class="brand-mark">R</span>
-        <span>Rithickkrex</span>
+        <span>Rithickkrex AI</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#company">Company AI</a>
-        <a href="#contact">Contact</a>
+        <button class="nav-switch is-active" type="button" data-view-target="portfolio">Portfolio</button>
+        <button class="nav-switch" type="button" data-view-target="company">Company AI</button>
+        <a href="#suite">Products</a>
+        <a href="#resources">Resources</a>
       </nav>
-      <a class="header-action" href="#contact">Start</a>
+      <div class="header-actions">
+        <a href="#contact">Contact</a>
+        <button class="header-action" type="button" data-view-target="company">Start Building</button>
+      </div>
     </header>
 
     <main id="top">
@@ -31,243 +34,394 @@
         <img
           class="hero-image"
           src="assets/hero-ai-studio.png"
-          alt="A dark AI interface scene with connected website panels."
+          alt="AI platform interface with connected panels and product screens."
         />
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-grid">
           <div class="hero-content">
-            <p class="eyebrow">Personal brand + company AI studio</p>
-            <h1 id="hero-title">Rithickkrex builds web experiences with AI inside.</h1>
+            <p class="eyebrow">AI portfolio and company platform</p>
+            <h1 id="hero-title">Build your own AI future with Rithickkrex.</h1>
             <p class="hero-copy">
-              A combined personal portfolio, blog hub, and company site for showcasing work,
-              publishing ideas, and selling AI-powered websites and automations.
+              A full responsive website for your personal AI portfolio and your company AI platform,
+              built to hold projects, blogs, tools, services, models, docs, and customer stories.
             </p>
-            <div class="hero-actions">
-              <a class="primary-button" href="#portfolio">View Portfolio</a>
-              <a class="secondary-button" href="#company">Explore Company AI</a>
+            <div class="hero-actions" aria-label="Choose website side">
+              <button class="primary-button view-choice is-active" type="button" data-view-target="portfolio">
+                View Portfolio
+              </button>
+              <button class="secondary-button view-choice" type="button" data-view-target="company">
+                View Company AI
+              </button>
             </div>
           </div>
 
-          <aside class="mode-panel" aria-label="Website mode selector">
-            <div class="tab-controls" role="tablist" aria-label="Choose site mode">
-              <button class="tab-button is-active" type="button" role="tab" data-tab="personal">
-                Personal
-              </button>
-              <button class="tab-button" type="button" role="tab" data-tab="company">
-                Company AI
-              </button>
+          <aside class="launch-panel" aria-label="Platform summary">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="tab-card is-active" id="personal-tab" data-panel="personal">
-              <span class="output-label">Portfolio mode</span>
-              <h2>Creator, builder, and AI explorer.</h2>
-              <p>
-                Highlight projects, skills, writing, proof, and your story in one sharp personal
-                website.
-              </p>
-              <ul>
-                <li>Featured projects and case studies</li>
-                <li>Blog posts for thoughts and tutorials</li>
-                <li>Contact section for collaborations</li>
-              </ul>
-            </div>
-            <div class="tab-card" id="company-tab" data-panel="company">
-              <span class="output-label">Company mode</span>
-              <h2>AI websites, assistants, and automations.</h2>
-              <p>
-                Present the company as a modern AI partner that helps people launch smarter digital
-                systems.
-              </p>
-              <ul>
-                <li>AI chatbots and customer support flows</li>
-                <li>Landing pages and conversion systems</li>
-                <li>Lead capture, CRM, and workflow automation</li>
-              </ul>
+            <p class="panel-label">Active side</p>
+            <h2 id="active-view-title">AI Portfolio</h2>
+            <p id="active-view-copy">
+              Your personal page for AI projects, writing, experiments, proof of work, and build logs.
+            </p>
+            <div class="quick-links">
+              <span>Projects</span>
+              <span>Blogs</span>
+              <span>AI apps</span>
+              <span>Services</span>
+              <span>Docs</span>
+              <span>Clients</span>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="stats-strip" aria-label="Highlights">
-        <div>
-          <strong>Personal</strong>
-          <span>Portfolio, projects, blogs, and story</span>
-        </div>
-        <div>
-          <strong>Company</strong>
-          <span>AI websites, assistants, and automation</span>
-        </div>
-        <div>
-          <strong>Future-ready</strong>
-          <span>Built to grow with new work and services</span>
-        </div>
+      <section class="news-strip" aria-label="Featured updates">
+        <a href="#resources">
+          <span>Featured</span>
+          AI website platform template is ready to expand
+        </a>
+        <a href="#suite">
+          <span>Product</span>
+          Studio, Forge, Flow, Models, and Deploy sections
+        </a>
+        <a href="#contact">
+          <span>Launch</span>
+          Desktop, tablet, and mobile-ready structure
+        </a>
       </section>
 
-      <section id="portfolio" class="section split-section">
-        <div class="section-heading">
-          <p class="eyebrow">Personal portfolio</p>
-          <h2>Make your personal brand feel serious, creative, and alive.</h2>
-        </div>
-        <div class="profile-card">
-          <span class="profile-avatar">RK</span>
-          <h3>Rithickkrex</h3>
-          <p>
-            Developer, AI builder, and digital creator focused on useful products, sharp interfaces,
-            and practical automation.
-          </p>
-          <div class="skill-row">
-            <span>Web Design</span>
-            <span>AI Tools</span>
-            <span>Automation</span>
-            <span>Content</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Featured work</p>
-          <h2>Portfolio cards ready for your projects.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <span class="card-kicker">Case study</span>
-            <h3>AI Business Website</h3>
+      <section class="view-shell">
+        <article id="portfolio-view" class="site-view is-active" data-view="portfolio">
+          <section class="page-intro">
+            <div>
+              <p class="eyebrow">Portfolio side</p>
+              <h2>One full page for your AI identity, projects, and writing.</h2>
+            </div>
             <p>
-              A polished website concept with AI lead qualification, service pages, and a launch
-              strategy generator.
+              This side is personal, but still AI-related. Add your apps, experiments, tutorials,
+              case studies, achievements, videos, GitHub links, and future work.
             </p>
-          </article>
-          <article class="project-card">
-            <span class="card-kicker">Product</span>
-            <h3>Personal Knowledge Hub</h3>
-            <p>A clean dashboard idea for saving notes, prompts, resources, and project plans.</p>
-          </article>
-          <article class="project-card">
-            <span class="card-kicker">Automation</span>
-            <h3>Smart Client Intake</h3>
-            <p>Forms, summaries, and follow-up messages connected into one simple client flow.</p>
-          </article>
-        </div>
+          </section>
+
+          <section class="identity-grid">
+            <article class="identity-card">
+              <span class="profile-avatar">RK</span>
+              <p class="eyebrow">Builder profile</p>
+              <h3>Rithickkrex</h3>
+              <p>
+                AI website creator, automation builder, and product-minded developer focused on
+                practical systems that people can actually use.
+              </p>
+              <div class="pill-row">
+                <span>AI websites</span>
+                <span>Automation</span>
+                <span>Product UI</span>
+                <span>Prompt design</span>
+              </div>
+            </article>
+            <article class="signal-card">
+              <span class="card-kicker">Current focus</span>
+              <h3>Build a public AI body of work.</h3>
+              <p>
+                Use the portfolio side like a lab notebook and showroom: every project, blog, and
+                experiment becomes proof that you can build.
+              </p>
+              <div class="metric-grid">
+                <div><strong>12</strong><span>project slots</span></div>
+                <div><strong>24</strong><span>blog ideas</span></div>
+                <div><strong>6</strong><span>service areas</span></div>
+              </div>
+            </article>
+          </section>
+
+          <section id="portfolio-projects" class="content-block">
+            <div class="section-heading">
+              <p class="eyebrow">Projects</p>
+              <h2>Add anything you build here.</h2>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card hero-card">
+                <span class="card-kicker">Featured project</span>
+                <h3>AI Website Builder</h3>
+                <p>
+                  A concept that turns a business idea into a site structure, sections, copy,
+                  service cards, and launch checklist.
+                </p>
+              </article>
+              <article class="feature-card">
+                <span class="card-kicker">Experiment</span>
+                <h3>Prompt Library</h3>
+                <p>Reusable prompts for writing, coding, research, planning, and customer support.</p>
+              </article>
+              <article class="feature-card">
+                <span class="card-kicker">Automation</span>
+                <h3>Client Intake AI</h3>
+                <p>Collects client answers, writes a summary, and suggests the best next action.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <div class="section-heading">
+              <p class="eyebrow">Portfolio platform</p>
+              <h2>Turn the personal side into a living AI platform.</h2>
+            </div>
+            <div class="rail-list">
+              <article>
+                <span>01</span>
+                <h3>Projects and case studies</h3>
+                <p>Add screenshots, links, tech stack, problem, solution, and result.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>AI notes and blogs</h3>
+                <p>Publish thoughts about tools, workflows, tutorials, and product lessons.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Public services</h3>
+                <p>Show what you can build for others: AI sites, assistants, and automation.</p>
+              </article>
+            </div>
+          </section>
+        </article>
+
+        <article id="company-view" class="site-view" data-view="company">
+          <section class="page-intro platform-intro">
+            <div>
+              <p class="eyebrow">Company AI side</p>
+              <h2>Everything your AI company needs, from platform to proof.</h2>
+            </div>
+            <p>
+              This side is company-focused: products, solutions, model-style cards, deployments,
+              resources, and an AI brief builder for potential clients.
+            </p>
+          </section>
+
+          <section id="suite" class="product-suite">
+            <div class="section-heading">
+              <p class="eyebrow">Do it all with Rithickkrex AI</p>
+              <h2>One platform-style suite for websites, agents, models, and automations.</h2>
+            </div>
+            <div class="suite-grid">
+              <article class="suite-card is-featured">
+                <span class="product-code">Studio</span>
+                <h3>AI App Studio</h3>
+                <p>Build and test AI assistants, portfolio sites, client portals, and internal tools.</p>
+                <ul>
+                  <li>Agent flows</li>
+                  <li>Website sections</li>
+                  <li>Launch checklist</li>
+                </ul>
+              </article>
+              <article class="suite-card">
+                <span class="product-code">Forge</span>
+                <h3>Custom AI Systems</h3>
+                <p>Shape company knowledge into assistants, workflows, and decision helpers.</p>
+                <ul>
+                  <li>Knowledge bases</li>
+                  <li>Custom prompts</li>
+                  <li>Evaluation loops</li>
+                </ul>
+              </article>
+              <article class="suite-card">
+                <span class="product-code">Flow</span>
+                <h3>Automation Engine</h3>
+                <p>Connect forms, email, summaries, CRM stages, approvals, and reports.</p>
+                <ul>
+                  <li>Lead routing</li>
+                  <li>Email follow-ups</li>
+                  <li>Task summaries</li>
+                </ul>
+              </article>
+              <article class="suite-card">
+                <span class="product-code">Models</span>
+                <h3>AI Capability Layer</h3>
+                <p>Plan the right model behavior for chat, coding, documents, speech, and search.</p>
+                <ul>
+                  <li>Chat assistants</li>
+                  <li>Document AI</li>
+                  <li>Coding support</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <div class="section-heading">
+              <p class="eyebrow">Solutions</p>
+              <h2>AI services people can understand and buy.</h2>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card">
+                <span class="card-kicker">Websites</span>
+                <h3>AI-ready websites</h3>
+                <p>Landing pages, portfolios, blogs, service pages, lead forms, and analytics.</p>
+              </article>
+              <article class="feature-card">
+                <span class="card-kicker">Assistants</span>
+                <h3>Customer AI agents</h3>
+                <p>Support, FAQs, onboarding, booking, recommendations, and qualification flows.</p>
+              </article>
+              <article class="feature-card">
+                <span class="card-kicker">Operations</span>
+                <h3>Workflow automation</h3>
+                <p>Summaries, email drafts, CRM updates, team handoffs, and weekly reports.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-block deployment-section">
+            <div class="section-heading">
+              <p class="eyebrow">Deploy your way</p>
+              <h2>Flexible paths for small brands and future enterprises.</h2>
+            </div>
+            <div class="deployment-grid">
+              <article>
+                <span>01</span>
+                <h3>Hosted website</h3>
+                <p>Simple static or app-based website for portfolios, blogs, and service pages.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Private workspace</h3>
+                <p>Client-specific assistant, internal docs, project boards, and automation flows.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Cloud integrations</h3>
+                <p>Connect to forms, storage, email, analytics, databases, and future AI APIs.</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="builder" class="builder-section" aria-labelledby="builder-title">
+            <div class="builder-copy">
+              <p class="eyebrow">AI brief builder</p>
+              <h2 id="builder-title">Generate a starter company plan.</h2>
+              <p>
+                Pick a business type, goal, and tone. This creates a basic brief for an AI website
+                project.
+              </p>
+            </div>
+
+            <form class="brief-form" id="brief-form">
+              <label>
+                Business type
+                <select id="business-type" name="businessType">
+                  <option value="personal brand">Personal brand</option>
+                  <option value="local service">Local service</option>
+                  <option value="online course">Online course</option>
+                  <option value="saas product">SaaS product</option>
+                  <option value="creative portfolio">Creative portfolio</option>
+                  <option value="custom AI product">Custom AI product</option>
+                </select>
+              </label>
+              <label>
+                Main goal
+                <select id="main-goal" name="mainGoal">
+                  <option value="book more calls">Book more calls</option>
+                  <option value="sell a digital offer">Sell a digital offer</option>
+                  <option value="answer customer questions">Answer customer questions</option>
+                  <option value="collect qualified leads">Collect qualified leads</option>
+                </select>
+              </label>
+              <label>
+                Brand tone
+                <select id="brand-tone" name="brandTone">
+                  <option value="confident and premium">Confident and premium</option>
+                  <option value="friendly and simple">Friendly and simple</option>
+                  <option value="bold and modern">Bold and modern</option>
+                  <option value="calm and expert">Calm and expert</option>
+                </select>
+              </label>
+              <button type="submit">Create AI Brief</button>
+            </form>
+
+            <div class="brief-output" id="brief-output" aria-live="polite">
+              <span class="output-label">AI site brief</span>
+              <h3>Your plan will appear here.</h3>
+              <p>
+                Select the options and create a brief to see page strategy, AI behavior, and launch
+                steps.
+              </p>
+            </div>
+          </section>
+        </article>
       </section>
 
-      <section id="blogs" class="section blog-section">
+      <section id="resources" class="resources-section">
         <div class="section-heading">
-          <p class="eyebrow">Blogs</p>
-          <h2>Publish ideas, tutorials, updates, and company thinking.</h2>
+          <p class="eyebrow">Resources</p>
+          <h2>Blogs, updates, docs, and customer stories can live here.</h2>
         </div>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <span>AI</span>
-            <h3>How small businesses can use AI without overcomplicating it</h3>
-            <p>Practical ways to add AI to websites, support, and daily workflows.</p>
+        <div class="resource-grid">
+          <article>
+            <span>Blog</span>
+            <h3>How to start an AI website without overthinking it</h3>
+            <p>Publish AI tutorials, project updates, and practical founder notes.</p>
           </article>
-          <article class="blog-card">
-            <span>Portfolio</span>
-            <h3>What makes a personal website actually memorable?</h3>
-            <p>A guide to story, proof, projects, and visual polish.</p>
+          <article>
+            <span>Docs</span>
+            <h3>Rithickkrex AI platform guide</h3>
+            <p>Add setup guides, service explanations, FAQs, and product walkthroughs.</p>
           </article>
-          <article class="blog-card">
-            <span>Build log</span>
-            <h3>Behind the scenes of building Rithickkrex online</h3>
-            <p>Notes about design decisions, experiments, and future upgrades.</p>
+          <article>
+            <span>Story</span>
+            <h3>Client transformation case study</h3>
+            <p>Show outcomes from future customers, demos, and internal experiments.</p>
           </article>
-        </div>
-      </section>
-
-      <section id="company" class="section company-section">
-        <div class="section-heading">
-          <p class="eyebrow">Company AI</p>
-          <h2>The business side: AI websites and automation systems.</h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-icon">01</span>
-            <h3>AI Website Design</h3>
-            <p>
-              Premium landing pages, portfolios, and business sites built around trust, clarity, and
-              conversion.
-            </p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon">02</span>
-            <h3>AI Chat Assistants</h3>
-            <p>
-              Website assistants for FAQs, lead qualification, onboarding, and faster customer
-              answers.
-            </p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon">03</span>
-            <h3>Workflow Automation</h3>
-            <p>
-              Connect forms, emails, summaries, CRM updates, and follow-ups so work moves by itself.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="builder" class="builder-section" aria-labelledby="builder-title">
-        <div class="builder-copy">
-          <p class="eyebrow">AI brief builder</p>
-          <h2 id="builder-title">Generate a starter company plan.</h2>
-          <p>
-            Pick your business type, goal, and tone. The site creates a simple AI website brief you
-            can use as a starting point.
-          </p>
-        </div>
-
-        <form class="brief-form" id="brief-form">
-          <label>
-            Business type
-            <select id="business-type" name="businessType">
-              <option value="personal brand">Personal brand</option>
-              <option value="local service">Local service</option>
-              <option value="online course">Online course</option>
-              <option value="saas product">SaaS product</option>
-              <option value="creative portfolio">Creative portfolio</option>
-              <option value="custom AI product">Custom AI product</option>
-            </select>
-          </label>
-          <label>
-            Main goal
-            <select id="main-goal" name="mainGoal">
-              <option value="book more calls">Book more calls</option>
-              <option value="sell a digital offer">Sell a digital offer</option>
-              <option value="answer customer questions">Answer customer questions</option>
-              <option value="collect qualified leads">Collect qualified leads</option>
-            </select>
-          </label>
-          <label>
-            Brand tone
-            <select id="brand-tone" name="brandTone">
-              <option value="confident and premium">Confident and premium</option>
-              <option value="friendly and simple">Friendly and simple</option>
-              <option value="bold and modern">Bold and modern</option>
-              <option value="calm and expert">Calm and expert</option>
-            </select>
-          </label>
-          <button type="submit">Create AI Brief</button>
-        </form>
-
-        <div class="brief-output" id="brief-output" aria-live="polite">
-          <span class="output-label">AI site brief</span>
-          <h3>Your plan will appear here.</h3>
-          <p>Select the options and create a brief to see page strategy, AI behavior, and launch steps.</p>
         </div>
       </section>
 
       <section id="contact" class="contact-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Use this site for you, your blogs, and your AI company.</h2>
+          <p class="eyebrow">Own your AI future</p>
+          <h2>Use this as your personal site and company platform together.</h2>
           <p>
-            Replace the placeholder email with your real contact details when you are ready to go
-            live.
+            Replace placeholders with your real projects, links, blogs, services, clients, pricing,
+            and contact details as you grow.
           </p>
         </div>
-        <a class="primary-button" href="rithickkrex@gmail.com">Start a Project</a>
+        <div class="contact-actions">
+          <a class="primary-button" href="mailto:hello@rithickkrex.example">Contact</a>
+          <button class="secondary-button" type="button" data-view-target="company">Company Side</button>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="#top" aria-label="Rithickkrex AI home">
+          <span class="brand-mark">R</span>
+          <span>Rithickkrex AI</span>
+        </a>
+        <p>Personal AI portfolio and company AI platform.</p>
+      </div>
+      <div class="footer-grid">
+        <nav aria-label="Products">
+          <h3>Products</h3>
+          <a href="#suite">Studio</a>
+          <a href="#suite">Forge</a>
+          <a href="#suite">Flow</a>
+        </nav>
+        <nav aria-label="Company">
+          <h3>Company</h3>
+          <button type="button" data-view-target="portfolio">Portfolio</button>
+          <button type="button" data-view-target="company">Company AI</button>
+          <a href="#contact">Contact</a>
+        </nav>
+        <nav aria-label="Resources">
+          <h3>Resources</h3>
+          <a href="#resources">Blogs</a>
+          <a href="#resources">Docs</a>
+          <a href="#resources">Stories</a>
+        </nav>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
