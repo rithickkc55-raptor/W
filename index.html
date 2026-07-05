@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rithickkrex AI Studio</title>
+    <meta
+      name="description"
+      content="An AI and website studio landing page with a client-side strategy brief generator."
+    />
+    <link rel="preload" href="assets/hero-ai-studio.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NeuralNest home">
+        <span class="brand-mark">R</span>
+        <span>Rithickkrex</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#builder">AI Builder</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-action" href="#builder">Build a Brief</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-ai-studio.png"
+          alt="A cinematic AI command center with floating interface panels and website layouts."
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI automation + conversion websites</p>
+          <h1 id="hero-title">Rithickkrex AI Studio</h1>
+          <p class="hero-copy">
+            Launch an intelligent website that explains your offer, captures leads, and turns messy
+            ideas into clean workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#builder">Generate Your AI Plan</a>
+            <a class="secondary-button" href="#services">Explore Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Studio highlights">
+        <div>
+          <strong>7 day</strong>
+          <span>site concept sprint</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>AI lead capture</span>
+        </div>
+        <div>
+          <strong>3x</strong>
+          <span>clearer customer journeys</span>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">What gets built</p>
+          <h2>One studio for the website and the intelligence behind it.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">01</span>
+            <h3>Website Design</h3>
+            <p>
+              Fast, responsive pages with sharp messaging, purposeful layouts, and clear paths to
+              book, buy, or subscribe.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">02</span>
+            <h3>AI Assistants</h3>
+            <p>
+              Guided chat flows for FAQs, onboarding, support triage, and lead qualification without
+              making visitors hunt.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">03</span>
+            <h3>Automation Systems</h3>
+            <p>
+              Intake forms, CRM handoffs, email follow-ups, and internal summaries wired into one
+              calm operating loop.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="builder" class="builder-section" aria-labelledby="builder-title">
+        <div class="builder-copy">
+          <p class="eyebrow">Interactive AI builder</p>
+          <h2 id="builder-title">Generate a starter brief in seconds.</h2>
+          <p>
+            Choose your business type and goal, then the page creates a tailored launch plan you can
+            use as the opening brief for your AI-powered site.
+          </p>
+        </div>
+
+        <form class="brief-form" id="brief-form">
+          <label>
+            Business type
+            <select id="business-type" name="businessType">
+              <option value="local service">Local service</option>
+              <option value="online course">Online course</option>
+              <option value="saas product">SaaS product</option>
+              <option value="creative portfolio">Creative portfolio</option>
+              <option value="create you own AI">Create ur own AI</option>
+            </select>
+          </label>
+          <label>
+            Main goal
+            <select id="main-goal" name="mainGoal">
+              <option value="book more calls">Book more calls</option>
+              <option value="sell a digital offer">Sell a digital offer</option>
+              <option value="answer customer questions">Answer customer questions</option>
+              <option value="collect qualified leads">Collect qualified leads</option>
+            </select>
+          </label>
+          <label>
+            Brand tone
+            <select id="brand-tone" name="brandTone">
+              <option value="confident and premium">Confident and premium</option>
+              <option value="friendly and simple">Friendly and simple</option>
+              <option value="bold and playful">Bold and playful</option>
+              <option value="calm and expert">Calm and expert</option>
+            </select>
+          </label>
+          <button type="submit">Create Brief</button>
+        </form>
+
+        <div class="brief-output" id="brief-output" aria-live="polite">
+          <span class="output-label">AI site brief</span>
+          <h3>Your plan will appear here.</h3>
+          <p>Select the options and create a brief to see page strategy, AI behavior, and launch steps.</p>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="section-heading">
+          <p class="eyebrow">Launch stack</p>
+          <h2>A complete first version, not just a pretty shell.</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>01</span>
+            <h3>Message Map</h3>
+            <p>Clarify offer, audience, proof points, objections, and calls to action.</p>
+          </div>
+          <div>
+            <span>02</span>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+            <h3>Site Build</h3>
+            <p>Design responsive sections, conversion copy, contact paths, and analytics basics.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>AI Layer</h3>
+            <p>Add assistant prompts, lead summaries, form routing, and useful automations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Turn the idea into a working AI website.</h2>
+        </div>
+        <a class="primary-button" href="mailto:hello@neuralnest.example">Start a Project</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
