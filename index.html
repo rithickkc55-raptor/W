@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rithickkrex AI Studio</title>
+    <title>Rithickkrex | Portfolio + AI Company</title>
     <meta
       name="description"
-      content="An AI and website studio landing page with a client-side strategy brief generator."
+      content="The personal portfolio, blog, and AI company website for Rithickkrex."
     />
     <link rel="preload" href="assets/hero-ai-studio.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="NeuralNest home">
+      <a class="brand" href="#top" aria-label="Rithickkrex home">
         <span class="brand-mark">R</span>
         <span>Rithickkrex</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#builder">AI Builder</a>
-        <a href="#work">Work</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#company">Company AI</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="header-action" href="#builder">Build a Brief</a>
+      <a class="header-action" href="#contact">Start</a>
     </header>
 
     <main id="top">
@@ -31,66 +31,176 @@
         <img
           class="hero-image"
           src="assets/hero-ai-studio.png"
-          alt="A cinematic AI command center with floating interface panels and website layouts."
+          alt="A dark AI interface scene with connected website panels."
         />
         <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">AI automation + conversion websites</p>
-          <h1 id="hero-title">Rithickkrex AI Studio</h1>
-          <p class="hero-copy">
-            Launch an intelligent website that explains your offer, captures leads, and turns messy
-            ideas into clean workflows.
+        <div class="hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Personal brand + company AI studio</p>
+            <h1 id="hero-title">Rithickkrex builds web experiences with AI inside.</h1>
+            <p class="hero-copy">
+              A combined personal portfolio, blog hub, and company site for showcasing work,
+              publishing ideas, and selling AI-powered websites and automations.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#portfolio">View Portfolio</a>
+              <a class="secondary-button" href="#company">Explore Company AI</a>
+            </div>
+          </div>
+
+          <aside class="mode-panel" aria-label="Website mode selector">
+            <div class="tab-controls" role="tablist" aria-label="Choose site mode">
+              <button class="tab-button is-active" type="button" role="tab" data-tab="personal">
+                Personal
+              </button>
+              <button class="tab-button" type="button" role="tab" data-tab="company">
+                Company AI
+              </button>
+            </div>
+            <div class="tab-card is-active" id="personal-tab" data-panel="personal">
+              <span class="output-label">Portfolio mode</span>
+              <h2>Creator, builder, and AI explorer.</h2>
+              <p>
+                Highlight projects, skills, writing, proof, and your story in one sharp personal
+                website.
+              </p>
+              <ul>
+                <li>Featured projects and case studies</li>
+                <li>Blog posts for thoughts and tutorials</li>
+                <li>Contact section for collaborations</li>
+              </ul>
+            </div>
+            <div class="tab-card" id="company-tab" data-panel="company">
+              <span class="output-label">Company mode</span>
+              <h2>AI websites, assistants, and automations.</h2>
+              <p>
+                Present the company as a modern AI partner that helps people launch smarter digital
+                systems.
+              </p>
+              <ul>
+                <li>AI chatbots and customer support flows</li>
+                <li>Landing pages and conversion systems</li>
+                <li>Lead capture, CRM, and workflow automation</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="Highlights">
+        <div>
+          <strong>Personal</strong>
+          <span>Portfolio, projects, blogs, and story</span>
+        </div>
+        <div>
+          <strong>Company</strong>
+          <span>AI websites, assistants, and automation</span>
+        </div>
+        <div>
+          <strong>Future-ready</strong>
+          <span>Built to grow with new work and services</span>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Personal portfolio</p>
+          <h2>Make your personal brand feel serious, creative, and alive.</h2>
+        </div>
+        <div class="profile-card">
+          <span class="profile-avatar">RK</span>
+          <h3>Rithickkrex</h3>
+          <p>
+            Developer, AI builder, and digital creator focused on useful products, sharp interfaces,
+            and practical automation.
           </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#builder">Generate Your AI Plan</a>
-            <a class="secondary-button" href="#services">Explore Services</a>
+          <div class="skill-row">
+            <span>Web Design</span>
+            <span>AI Tools</span>
+            <span>Automation</span>
+            <span>Content</span>
           </div>
         </div>
       </section>
 
-      <section class="metrics" aria-label="Studio highlights">
-        <div>
-          <strong>7 day</strong>
-          <span>site concept sprint</span>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured work</p>
+          <h2>Portfolio cards ready for your projects.</h2>
         </div>
-        <div>
-          <strong>24/7</strong>
-          <span>AI lead capture</span>
-        </div>
-        <div>
-          <strong>3x</strong>
-          <span>clearer customer journeys</span>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <span class="card-kicker">Case study</span>
+            <h3>AI Business Website</h3>
+            <p>
+              A polished website concept with AI lead qualification, service pages, and a launch
+              strategy generator.
+            </p>
+          </article>
+          <article class="project-card">
+            <span class="card-kicker">Product</span>
+            <h3>Personal Knowledge Hub</h3>
+            <p>A clean dashboard idea for saving notes, prompts, resources, and project plans.</p>
+          </article>
+          <article class="project-card">
+            <span class="card-kicker">Automation</span>
+            <h3>Smart Client Intake</h3>
+            <p>Forms, summaries, and follow-up messages connected into one simple client flow.</p>
+          </article>
         </div>
       </section>
 
-      <section id="services" class="section">
+      <section id="blogs" class="section blog-section">
         <div class="section-heading">
-          <p class="eyebrow">What gets built</p>
-          <h2>One studio for the website and the intelligence behind it.</h2>
+          <p class="eyebrow">Blogs</p>
+          <h2>Publish ideas, tutorials, updates, and company thinking.</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <span>AI</span>
+            <h3>How small businesses can use AI without overcomplicating it</h3>
+            <p>Practical ways to add AI to websites, support, and daily workflows.</p>
+          </article>
+          <article class="blog-card">
+            <span>Portfolio</span>
+            <h3>What makes a personal website actually memorable?</h3>
+            <p>A guide to story, proof, projects, and visual polish.</p>
+          </article>
+          <article class="blog-card">
+            <span>Build log</span>
+            <h3>Behind the scenes of building Rithickkrex online</h3>
+            <p>Notes about design decisions, experiments, and future upgrades.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="company" class="section company-section">
+        <div class="section-heading">
+          <p class="eyebrow">Company AI</p>
+          <h2>The business side: AI websites and automation systems.</h2>
         </div>
         <div class="service-grid">
           <article class="service-card">
             <span class="service-icon">01</span>
-            <h3>Website Design</h3>
+            <h3>AI Website Design</h3>
             <p>
-              Fast, responsive pages with sharp messaging, purposeful layouts, and clear paths to
-              book, buy, or subscribe.
+              Premium landing pages, portfolios, and business sites built around trust, clarity, and
+              conversion.
             </p>
           </article>
           <article class="service-card">
             <span class="service-icon">02</span>
-            <h3>AI Assistants</h3>
+            <h3>AI Chat Assistants</h3>
             <p>
-              Guided chat flows for FAQs, onboarding, support triage, and lead qualification without
-              making visitors hunt.
+              Website assistants for FAQs, lead qualification, onboarding, and faster customer
+              answers.
             </p>
           </article>
           <article class="service-card">
             <span class="service-icon">03</span>
-            <h3>Automation Systems</h3>
+            <h3>Workflow Automation</h3>
             <p>
-              Intake forms, CRM handoffs, email follow-ups, and internal summaries wired into one
-              calm operating loop.
+              Connect forms, emails, summaries, CRM updates, and follow-ups so work moves by itself.
             </p>
           </article>
         </div>
@@ -98,11 +208,11 @@
 
       <section id="builder" class="builder-section" aria-labelledby="builder-title">
         <div class="builder-copy">
-          <p class="eyebrow">Interactive AI builder</p>
-          <h2 id="builder-title">Generate a starter brief in seconds.</h2>
+          <p class="eyebrow">AI brief builder</p>
+          <h2 id="builder-title">Generate a starter company plan.</h2>
           <p>
-            Choose your business type and goal, then the page creates a tailored launch plan you can
-            use as the opening brief for your AI-powered site.
+            Pick your business type, goal, and tone. The site creates a simple AI website brief you
+            can use as a starting point.
           </p>
         </div>
 
@@ -110,11 +220,12 @@
           <label>
             Business type
             <select id="business-type" name="businessType">
+              <option value="personal brand">Personal brand</option>
               <option value="local service">Local service</option>
               <option value="online course">Online course</option>
               <option value="saas product">SaaS product</option>
               <option value="creative portfolio">Creative portfolio</option>
-              <option value="create you own AI">Create ur own AI</option>
+              <option value="custom AI product">Custom AI product</option>
             </select>
           </label>
           <label>
@@ -131,11 +242,11 @@
             <select id="brand-tone" name="brandTone">
               <option value="confident and premium">Confident and premium</option>
               <option value="friendly and simple">Friendly and simple</option>
-              <option value="bold and playful">Bold and playful</option>
+              <option value="bold and modern">Bold and modern</option>
               <option value="calm and expert">Calm and expert</option>
             </select>
           </label>
-          <button type="submit">Create Brief</button>
+          <button type="submit">Create AI Brief</button>
         </form>
 
         <div class="brief-output" id="brief-output" aria-live="polite">
@@ -145,36 +256,16 @@
         </div>
       </section>
 
-      <section id="work" class="section work-section">
-        <div class="section-heading">
-          <p class="eyebrow">Launch stack</p>
-          <h2>A complete first version, not just a pretty shell.</h2>
-        </div>
-        <div class="timeline">
-          <div>
-            <span>01</span>
-            <h3>Message Map</h3>
-            <p>Clarify offer, audience, proof points, objections, and calls to action.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>Site Build</h3>
-            <p>Design responsive sections, conversion copy, contact paths, and analytics basics.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>AI Layer</h3>
-            <p>Add assistant prompts, lead summaries, form routing, and useful automations.</p>
-          </div>
-        </div>
-      </section>
-
       <section id="contact" class="contact-section">
         <div>
-          <p class="eyebrow">Ready when you are</p>
-          <h2>Turn the idea into a working AI website.</h2>
+          <p class="eyebrow">Contact</p>
+          <h2>Use this site for you, your blogs, and your AI company.</h2>
+          <p>
+            Replace the placeholder email with your real contact details when you are ready to go
+            live.
+          </p>
         </div>
-        <a class="primary-button" href="mailto:hello@neuralnest.example">Start a Project</a>
+        <a class="primary-button" href="mailto:hello@rithickkrex.example">Start a Project</a>
       </section>
     </main>
 

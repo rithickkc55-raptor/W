@@ -1,5 +1,7 @@
 const form = document.querySelector("#brief-form");
 const output = document.querySelector("#brief-output");
+const tabButtons = document.querySelectorAll("[data-tab]");
+const tabPanels = document.querySelectorAll("[data-panel]");
 
 const recommendations = {
   "book more calls": [
@@ -50,3 +52,17 @@ function createBrief(event) {
 }
 
 form.addEventListener("submit", createBrief);
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const activeTab = button.dataset.tab;
+
+    tabButtons.forEach((item) => {
+      item.classList.toggle("is-active", item.dataset.tab === activeTab);
+    });
+
+    tabPanels.forEach((panel) => {
+      panel.classList.toggle("is-active", panel.dataset.panel === activeTab);
+    });
+  });
+});
